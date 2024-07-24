@@ -4,10 +4,10 @@ import NavBar from "./components/NavBar.tsx";
 import GameGrid from "./components/GameGrid.tsx";
 import GenreList from "./components/GenreList.tsx";
 import { Genre } from "./hooks/useGenre.ts";
-import { Platform } from "./hooks/useGames.ts";
 import PlatformSelector from "./components/PlatformSelector.tsx";
 import SortSelector from "./components/SortSelector.tsx";
 import GameHeading from "./components/GameHeading.tsx";
+import { Platform } from "./hooks/usePlatforms.ts";
 
 export interface GameQuery {
   genre: Genre | null;
