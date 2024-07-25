@@ -19,8 +19,11 @@ const GameGrid = ({ gameQuery }: Props) => {
     fetchNextPage,
     hasNextPage,
   } = useGames(gameQuery);
+
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
   if (error) return <Text>{error.message}</Text>;
+
   return (
     <Box padding={'10px'}>
       <SimpleGrid
