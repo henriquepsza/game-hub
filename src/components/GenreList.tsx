@@ -1,4 +1,4 @@
-import useGenre, { Genre } from '../hooks/useGenre.ts';
+import useGenres, { Genre } from '../hooks/useGenres.ts';
 import {
   Button,
   Heading,
@@ -16,7 +16,7 @@ interface Props {
 }
 
 const GenreList = ({ selectedGenreId, onSelectGenre }: Props) => {
-  const { data, error, isLoading } = useGenre();
+  const { data, error, isLoading } = useGenres();
   const skeletons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
   if (error) return null;
